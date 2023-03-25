@@ -41,7 +41,7 @@ jobs:
           npm run build --force
       - name: Lint
         run: |
-          npm run lint
+          ng run lint
       - name: Update types to latest
         run: |
           npm install --save-dev @types/node@latest --force
@@ -67,4 +67,5 @@ jobs:
       - name: Deploy
         run: |
           npm run deploy
+
           
